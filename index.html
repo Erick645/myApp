@@ -1,0 +1,381 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 		
+	<title>Mi 1º Web App</title> 	
+	<link rel="apple-touch-icon" href="icon.png"/>
+	<link rel="icon" href="icon.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--  CDN jQuery & jQuery Mobile --> 
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		.ui-li-desc{text-overflow:ellipsis;overflow:visible;white-space:normal;}
+	</style>
+
+<div data-role="page" id="principal"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+	  <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext" class="ui-btn-active">Inicio</a>
+	  <h1>Logo</h1>
+	   <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+ </header> 
+ <div class="ui-content" role="main">
+	
+		<ul data-role="listview">			
+			<li data-role="list-divider">Noticias</li>
+			<li><a href="#noticias">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				</a>
+			</li>						
+		</ul>				
+		<ul  data-role="listview">			
+			<li data-role="list-divider">Eventos</li>
+			<li><a href="#eventos">								
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			</a>			
+			</li>
+		</ul>					
+			<!-- Colocar aquí Widget o codigo para mostrar contenido de redes sociales --> 
+			<ul  data-role="listview">			
+			<li data-role="list-divider">Redes sociales</li>
+			<li><a href="#">				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				</a>
+			</li>
+			<li><a href="#">				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				</a>
+			</li>						
+			<li><a href="#">				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+				</a>
+			</li>									
+		</ul>					
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#eventos">Eventos</a>
+			<li><a href="#noticias">Noticias</a>
+			<li><a href="#notas">Notas</a>
+			<li><a href="#redes">Redes</a>  
+	   </ul>
+	</div>
+ </nav> 
+</div>
+
+<div data-role="page" id="noticias"> 
+  <header data-role="header"  data-position="fixed" data-id ="cabecera">
+   <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+   <h1>Logo</h1>
+   <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+  </header> 
+  <div class="ui-content" role="main">	
+   <ul data-role="listview">			
+    <li data-role="list-divider">Noticias</li>
+    <li><a href="#">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></a></li>						
+    <li><a href="#">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></a></li>						
+    <li><a href="#">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></a></li>									
+   </ul>			
+   </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+  <div data-role="navbar">
+   <ul>
+    <li><a href="#eventos">Eventos</a>
+    <li><a href="#noticias" class="ui-btn-active ui-state-persist">Noticias</a>
+    <li><a href="#notas">Notas</a>
+    <li><a href="#redes">Redes</a>  
+   </ul>
+  </div>
+ </nav> 
+</div>
+
+
+<div data-role="page" id="eventos"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+  <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+  <h1>Logo</h1>
+  <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+ </header> 
+ <div class="ui-content" role="main">	
+   <ul  data-role="listview">			
+    <li data-role="list-divider">Eventos</li>
+    <li><a href="#">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</p></a></li>						
+    <li><a href="#">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</p></a></li>						
+    <li><a href="#">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa...</p></a></li>									
+   </ul>			
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+  <div data-role="navbar">
+   <ul>
+    <li><a href="#eventos" class="ui-btn-active ui-state-persist">Eventos</a>
+    <li><a href="#noticias">Noticias</a>
+    <li><a href="#notas">Notas</a>
+    <li><a href="#redes">Redes</a>  
+   </ul>
+  </div>
+ </nav> 
+</div>
+
+<div data-role="page" id="notas"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+  <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+   <h1>Logo</h1>
+   <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+   <div data-role="navbar">
+     <ul>
+      <li><a href="#notas" class="ui-btn-active ui-state-persist">Leer notas</a>
+      <li><a href="#crearnota">Crear una nota</a>			
+    </ul>
+   </div>	
+ </header> 
+ <div class="ui-content" role="main">  
+   <ul data-role="listview">			
+     <li>
+      <h3>Categoría 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>				
+      <p><a href="http://www.sitio1.com">http://www.sitio1.com</a></p>
+     </li>
+     <li>
+      <h3>Categoría 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>				
+      <p><a href="http://www.sitio2.com">http://www.sitio2.com</a></p>
+     </li>			
+   </ul>  
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#eventos">Eventos</a>
+			<li><a href="#noticias">Noticias</a>
+			<li><a href="#notas" class="ui-btn-active ui-state-persist">Notas</a>
+			<li><a href="#redes">Redes</a>  
+	   </ul>
+	</div>
+ </nav> 
+</div>
+
+<div data-role="page" id="crearnota"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+   <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+   <h1>Logo</h1>
+   <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+   <div data-role="navbar">
+   <ul>
+     <li><a href="#notas">Leer Notas</a>
+     <li><a href="#crearnota" class="ui-btn-active ui-state-persist">Crear una nota</a>			
+    </ul>
+	</div>	
+  </header> 
+ <div class="ui-content" role="main">
+   <form id="formunotas" data-ajax="false" method="get">		
+    <label for="combinacion"><strong>Categoría</strong></label>
+    <fieldset  class="ui-grid-a">		
+    <div class="ui-block-a">
+     <select name="categoria">
+      <option value="opcion1">Categoría 1</option>
+      <option value="opcion2">Categoría 2</option>
+      <option value="opcion2">Categoría 3</option>
+     </select>
+    </div>
+    <div class="ui-block-b"><a href="#categoria" data-role="button">Agregar / Elminar</a></div>
+    </fieldset>
+    <label for="nota"><strong>Nota</strong></label>		
+    <textarea id="nota" name="nota"></textarea>
+    <label for="url"><strong>URL</strong></label>		
+    <input type="url" id="url" name="url"/>
+    <div class="ui-block-b"><input type="submit" value="Guardar nota" id="guardarnota"/></div>		
+	</form>		
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+  <div data-role="navbar">
+    <ul>
+     <li><a href="#eventos">Eventos</a>
+     <li><a href="#noticias">Noticias</a>
+     <li><a href="#notas" class="ui-btn-active ui-state-persist">Notas</a>
+     <li><a href="#redes">Redes</a>  
+    </ul>
+   </div>
+ </nav> 
+</div>
+
+<div data-role="page" id="categoria"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+  <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+  <h1>Logo</h1>
+  <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+  <div data-role="navbar">
+   <ul>
+    <li><a href="#notas">Leer Notas</a>
+    <li><a href="#crearnota" class="ui-btn-active ui-state-persist">Crear una nota</a>			
+   </ul>
+  </div>	
+ </header> 
+ <div class="ui-content" role="main">
+  <form>		
+   <label><strong>Agregar categoría</strong></label>
+   <input type="text" id="agregacatagoria"/>
+   <input type="button" id="agregacatagoriabtn" name="agregacatagoriabtn" value="Agregar categoría"/>
+  </form>			
+  <ul data-role="listview" data-icon="delete" data-inset="true" >
+   <li data-role="list-divider">Categorías</li>
+   <li id="categoria1"><a href="#">Categoría 1</a></li>
+   <li id="categoria2"><a href="#">Categoría 2</a></li>
+   <li id="categoria3"><a href="#">Categoría 3</a></li>
+  </ul>		
+   <a href="#crearnota" data-role="button">Regresar a crear nota</a>
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+  <div data-role="navbar">
+   <ul>
+     <li><a href="#eventos">Eventos</a>
+     <li><a href="#noticias">Noticias</a>
+     <li><a href="#notas" class="ui-btn-active ui-state-persist">Notas</a>
+     <li><a href="#redes">Redes</a>  
+    </ul>
+   </div>
+ </nav> 
+</div>
+
+<div data-role="page" id="redes"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+	  <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+	  <h1>Logo</h1>
+	   <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext">Configuración</a>
+ </header> 
+ <div class="ui-content" role="main">	
+		<ul data-role="listview">
+			<li data-role="list-divider">Redes Sociales</li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>			
+			<li><a href="#">Google+</a></li>			
+			<li><a href="#">Flickr</a></li>			
+			<li><a href="#">YouTube</a></li>			
+		</ul>	
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#eventos">Eventos</a>
+			<li><a href="#noticias">Noticias</a>
+			<li><a href="#notas">Notas</a>
+			<li><a href="#redes" class="ui-btn-active ui-state-persist">Redes</a>  
+	   </ul>
+	</div>
+ </nav> 
+</div>
+
+<div data-role="page" id="configuracion"> 
+ <header data-role="header"  data-position="fixed" data-id ="cabecera">
+   <a href="#principal" data-icon="home" data-role="button" title="Inicio" data-iconpos="notext">Inicio</a>
+   <h1>Logo</h1>
+   <a href="#configuracion" data-icon="gear" data-role="button" title="Configuración" data-iconpos="notext" class="ui-btn-active">Configuración</a>
+ </header> 
+ <div class="ui-content" role="main">
+  <form>		
+   <label><strong>Combinación de colores:</strong></label>
+   <fieldset  class="ui-grid-a">		
+   <div class="ui-block-a">
+    <select id="tema">
+     <option value="opcion1">Opción 1</option>
+     <option value="opcion2">Opción 2</option>
+     <option value="opcion3">Opción 3</option>
+    </select>
+   </div>
+   <div class="ui-block-b"><input type="button" value="Guardar" id="guardartheme"/></div>
+   </fieldset>
+   <labe><strong>Ubicación Geográfica:</strong></label>
+   <fieldset  class="ui-grid-a">
+    <div class="ui-block-a">
+     <select id="ubicacion">
+      <option value="pais1">Pais 1</option>
+      <option value="pais2">Pais 2</option>
+     <option value="pais3">Pais 3</option>
+    </select>		
+    </div>
+    <div class="ui-block-b"><input type="button" value="Guardar" id="guardarpais"/></div>
+    </fieldset>
+  </form>	
+  <a href="#" data-role="button" id="borrarnotas">Borrar todas las notas</a>
+  <a href="#ayuda" data-role="button" data-rel="dialog" data-transition="pop">Ayuda</a>
+  <a href="#acercade" data-role="button" data-rel="dialog" data-transition="pop">Acerca de</a>
+ </div> 
+ <nav data-role="footer" data-position="fixed"  data-id ="pie">  
+   <div data-role="navbar">
+   <ul>
+     <li><a href="#eventos">Eventos</a>
+     <li><a href="#noticias">Noticias</a>
+     <li><a href="#notas">Notas</a>
+     <li><a href="#redes">Redes</a>  
+    </ul>
+  </div>
+ </nav> 
+</div>
+
+<div data-role="page" id="ayuda"> 
+ <div data-role="header">		
+  <h1>Ayuda</h1>
+ </div>
+ <div class="ui-content" role="main">
+  <h2>Cómo utilizar esta aplicación</h2>
+  <p>Lorem ipsum dolor sit amet</p>
+  <p>Aenean commodo ligula eget dolor.</p>		
+ </div>
+</div>
+
+<div data-role="page" id="acercade"> 
+ <div data-role="header">		
+   <h1>Acerca de</h1>
+  </div>
+  <div class="ui-content" role="main">
+   <h2>Acerca de esta aplicación</h2>
+   <p>Aplicación desarrollada por @damiande.</p>			
+   <p>Buenos Aires, Argentina - Año 2015</p>
+  </div>
+</div>	
+<script>
+    $('#guardartheme').click(function() {
+       var tema = $("#tema").val();
+	   localStorage.setItem("op_tema", tema);	   
+    });
+	
+	$('#guardarpais').click(function() {
+       var geo = $("#ubicacion").val();
+	   localStorage.setItem("gelocalizacion", geo);	   
+    });
+	
+	
+	$('#agregacatagoriabtn').click(function() {
+		var categorias = localStorage.getItem("cat");
+		if(categorias){console.log(categorias)}
+		else{console.log("no categorias")};
+	});
+	
+$('#formunotas').submit(function() {
+    var jsonNota = {};
+    var arraySerializado = $('#formunotas').serializeArray();	
+    $.each(arraySerializado, function() {       
+      jsonNota[this.name] = this.value || '';       	  
+    });
+		var guardarnota = JSON.stringify(jsonNota);		
+		localStorage.setItem("nota", guardarnota);	   
+	});
+
+  $('#borrarnotas').click(function(event) {       
+    event.preventDefault();
+     localStorage.clear();    
+    });
+  
+
+</script>
+</html>
